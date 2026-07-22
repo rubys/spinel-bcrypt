@@ -1,0 +1,29 @@
+vector $2a$05$... ok
+vector $2a$05$... ok
+vector $2a$05$... ok
+vector $2a$05$... ok
+== right: true
+== wrong: false
+is_password?: true
+version: 2a
+cost: 5
+salt: $2a$05$CCCCCCCCCCCCCCCCCCCCC.
+checksum: E5YPO9kmyuRGyh0XouQYb4YMJKvyOeW
+to_s roundtrip: true
+valid_hash? digest: true
+valid_hash? junk: false
+valid_salt? salt: true
+valid_salt? junk: false
+InvalidHash: raised
+InvalidCost: raised
+InvalidSalt: raised
+create verifies: true
+create rejects: false
+create cost: 5
+create version: 2a
+create length: 60
+create salt length: 29
+create checksum length: 31
+salt prefix: $2a$
+salt cost digits: 06
+salt length: 29
