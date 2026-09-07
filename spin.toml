@@ -2,4 +2,11 @@
 name = "bcrypt"
 version = "0.1.0"
 
+# NAMED, not globbed: spin stopped compiling package C that no
+# [package] sources entry reaches, and warns rather than errors — so a
+# forgotten file surfaces as an undefined symbol at link instead. Listing
+# the two explicitly means a third file added later gets that warning
+# rather than being picked up silently.
+sources = ["crypt_blowfish.c", "sp_bcrypt.c"]
+
 # published repos are conventionally named spinel-bcrypt
