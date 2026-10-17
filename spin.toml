@@ -1,6 +1,6 @@
 [package]
 name = "bcrypt"
-version = "0.1.0"
+version = "0.1.1"
 
 # NAMED, not globbed: spin stopped compiling package C that no
 # [package] sources entry reaches, and warns rather than errors — so a
